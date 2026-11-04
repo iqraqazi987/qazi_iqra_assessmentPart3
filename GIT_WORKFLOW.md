@@ -11,9 +11,9 @@ git remote add origin YOUR-REMOTE-URL
 git push -u origin main
 
 git switch -c feature/alberta-trails-integration
-git add index.html style.css script.js README.md decision_log.md GIT_WORKFLOW.md
+git add .
 git commit -m "feat: add responsive trail map and live weather"
-git push -u origin feature/alberta-trails-integration
+git push -u origin feature/alberta-trails--integration
 ```
 
 On GitHub:
