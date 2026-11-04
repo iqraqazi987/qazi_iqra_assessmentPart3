@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Alberta Trails | Trailhead Map & Live Weather</title>
+  <meta name="description" content="Explore beginner-friendly trails near Banff, Alberta. View a trail map and check current local weather before you go.">
+  <meta name="keywords" content="Alberta trails, beginner hiking, Banff trails, trail map, Alberta weather">
+  <meta name="author" content="Maqsood Ahmed">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#173b32">
+  <!-- Replace this example canonical URL after publishing the site. -->
+  <link rel="canonical" href="https://example.com/alberta-trails/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Explore Alberta Trails | Trailhead Map & Live Weather">
+  <meta property="og:description" content="A simple guide to beginner-friendly Alberta trails with a live weather check and interactive map.">
+  <meta property="og:url" content="https://example.com/alberta-trails/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Explore Alberta Trails">
+  <meta name="twitter:description" content="Explore beginner-friendly Alberta trails and check local weather.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://api.open-meteo.com">
+  <link rel="preconnect" href="https://www.openstreetmap.org">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Explore Alberta Trails",
+    "description": "Beginner-friendly Alberta trail information with an interactive map and current weather.",
+    "inLanguage": "en-CA",
+    "about": {
+      "@type": "TouristAttraction",
+      "name": "Banff area trails",
+      "address": { "@type": "PostalAddress", "addressRegion": "Alberta", "addressCountry": "CA" }
+    }
+  }
+  </script>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <p class="eyebrow">ALBERTA • OUTDOOR GUIDE</p>
+    <h1>Trailhead Map &amp; Live Weather</h1>
+    <p class="intro">Plan a relaxed day outdoors. Explore the Banff area map and check current weather before you leave.</p>
+  </header>
+
+  <main id="main">
+    <section class="panel" aria-labelledby="weather-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LOCAL CONDITIONS</p>
+          <h2 id="weather-heading">Banff weather</h2>
+        </div>
+        <span class="live-label"><span aria-hidden="true">●</span> Live data</span>
+      </div>
+      <div id="weather" class="weather-grid" aria-live="polite">
+        <p>Loading current weather…</p>
+      </div>
+      <p id="weather-updated" class="muted"></p>
+      <button id="refresh-weather" class="button" type="button">Refresh weather</button>
+      <noscript><p>JavaScript is required to load current weather. Please enable JavaScript.</p></noscript>
+    </section>
+
+    <section class="panel" aria-labelledby="map-heading">
+      <p class="eyebrow">EXPLORE THE AREA</p>
+      <h2 id="map-heading">Banff trail map</h2>
+      <p class="muted">Use the map to explore the Banff area. Check official park guidance and trail conditions before hiking.</p>
+      <div class="map-frame">
+        <iframe
+          title="OpenStreetMap map of Banff, Alberta"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-115.62%2C51.14%2C-115.48%2C51.22&amp;layer=mapnik&amp;marker=51.1784%2C-115.5708"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          sandbox="allow-scripts allow-same-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="map-fallback">If the map does not load, <a href="https://www.openstreetmap.org/?mlat=51.1784&amp;mlon=-115.5708#map=13/51.1784/-115.5708" target="_blank" rel="noopener noreferrer">open Banff in OpenStreetMap</a>.</p>
+      <p class="attribution">Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>.</p>
+    </section>
+
+    <section class="panel tips" aria-labelledby="tips-heading">
+      <p class="eyebrow">BEFORE YOU GO</p>
+      <h2 id="tips-heading">Simple trail reminders</h2>
+      <ul>
+        <li>Check official trail closures and current conditions.</li>
+        <li>Bring water, suitable footwear and weather-appropriate layers.</li>
+        <li>Stay on marked trails and respect wildlife.</li>
+      </ul>
+      <p class="muted">This student demo is informational and is not a substitute for official park or emergency advice.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for SODV1401 • Alberta Trails demo</p>
+  </footer>
+</body>
+</html>
