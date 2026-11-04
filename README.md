@@ -14,19 +14,11 @@ A small SODV1401 Part 3 competency project using HTML, CSS and vanilla JavaScrip
 Use VS Code Live Server, or run a local server from this folder:
 
 ```bash
-python3 -m http.server 8000
+python3 -m http.server 5500
 ```
 
-Open `http://localhost:8000`.
+Open `http://localhost:5500`.
 
-## Before publishing
-1. Replace `https://example.com/alberta-trails/` in the canonical and Open Graph URL with the real public URL.
-2. Run Lighthouse in Chrome DevTools using Mobile mode and save the actual Performance and SEO scores.
-3. If deploying to a static host, enable Brotli or gzip compression.
-4. Check the live API and map on mobile and desktop.
-
-## Git workflow
-See `GIT_WORKFLOW.md` for feature branch, pull request and squash-merge commands.
 
 ## Third-party services
 - Open-Meteo: weather API. No API key is used or exposed.

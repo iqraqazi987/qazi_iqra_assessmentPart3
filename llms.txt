@@ -3,7 +3,7 @@
 > A student project showing a Banff-area map and current weather.
 
 ## Main page
-- [Explore Alberta Trails](https://example.com/alberta-trails/): Replace this example URL with the deployed website URL.
+- [Explore Alberta Trails](http://localhost:5500/alberta-trails/): Replace this example URL with the deployed website URL.
 
 ## Important notes
 - Weather is provided by Open-Meteo and may be temporarily unavailable.
