@@ -38,12 +38,39 @@
   <script type="module" src="script.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <p class="eyebrow">ALBERTA • OUTDOOR GUIDE</p>
-    <h1>Trailhead Map &amp; Live Weather</h1>
-    <p class="intro">Plan a relaxed day outdoors. Explore the Banff area map and check current weather before you leave.</p>
-  </header>
+  <header class="hero">
+    <picture class="hero-background">
+      <source srcset="images/hero.webp" type="image/webp">
+        <img
+        src="images/hero.jpeg"
+            alt="Beautiful mountain landscape in Alberta"
+            fetchpriority="high"
+            decoding="async"
+            loading="lazy"
+            width="1920"
+            height="1080"
+        >
+    </picture>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <p class="eyebrow">DISCOVER THE CANADIAN ROCKIES</p>
+
+        <h1>Explore Alberta's Beautiful Trails</h1>
+
+        <p class="intro">
+            Discover breathtaking mountain landscapes,
+            explore beginner-friendly trails and check
+            live weather conditions before your adventure.
+        </p>
+
+        <a href="#weather" class="hero-button">
+            Explore Trails
+            <span aria-hidden="true">→</span>
+        </a>
+    </div>
+</header>
 
   <main id="main">
     <section class="panel" aria-labelledby="weather-heading">
